@@ -3,7 +3,6 @@ from django.contrib.auth.models import User
 from .models import Board, Topic, Post
 from .forms import NewTopicForm
 
-# Create your views here.
 def home(request):
     boards = Board.objects.all()
     return render(request, 'home.html', {'boards': boards})
