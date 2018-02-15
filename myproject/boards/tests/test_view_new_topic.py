@@ -80,6 +80,7 @@ class NewTopicTests(TestCase):
         self.assertFalse(Topic.objects.exists())
         self.assertFalse(Post.objects.exists())
 
+
 class LoginRequiredNewTopicTests(TestCase):
     def setUp(self):
         Board.objects.create(name='Django', description='Django board.')
